@@ -15,7 +15,10 @@ def hitung():
         t0 = float(t0_input.get())
         h = float(h_input.get())
     except:
-        messagebox.showwarning(title="Terdapat kolom yang masih kosong!", message="Mohon isi kolom yang kosong!")
+        messagebox.showwarning(title="Terdapat kolom yang kosong!", message="Mohon isi kolom yang kosong!")
+    
+    if h == 0:
+        messagebox.showwarning(title="Nilai Selang Waktu (Δt) tidak boleh 0!", message="Mohon isi nilai Selang Waktu (Δt) dengan benar!")
 
     x = t0 + h
     f1 = float((t3 * x ** 3) + (t2 * x ** 2) + (t * x) + d)
@@ -26,7 +29,7 @@ def hitung():
 
 window = Tk()
 window.title("KALKULATOR KECEPATAN RATA-RATA")
-window.config(padx=30, pady=30, bg=BLUE) 
+window.config(padx=30, pady=30, bg=BLUE)
 
 canvas = Canvas(width=200, height=142, bg=BLUE, highlightthickness=0)
 calculator_img = PhotoImage(file="calculator.png")
@@ -76,7 +79,7 @@ hasil_label = Label(text="0", font=("bold"), bg=BLUE)
 hasil_label.grid(row=9, column=1)
 
 # Button
-button = Button(text="Hitung!", command=hitung, width=7, font=(FONT_NAME, 10), bg=GRAY)
+button = Button(text="Hitung!", command=hitung, width=7, font=(FONT_NAME, 10, "bold"), bg=GRAY)
 button.grid(row=10, column=1)
 
 
