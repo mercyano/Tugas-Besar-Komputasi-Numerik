@@ -29,6 +29,8 @@ def hitung():
 
 window = Tk()
 window.title("KALKULATOR KECEPATAN RATA-RATA")
+window.maxsize(430, 450)
+window.iconbitmap("myIcon.ico")
 window.config(padx=30, pady=30, bg=BLUE)
 
 canvas = Canvas(width=200, height=142, bg=BLUE, highlightthickness=0)
