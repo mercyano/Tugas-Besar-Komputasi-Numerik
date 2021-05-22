@@ -1,17 +1,21 @@
 from tkinter import *
+from tkinter import messagebox
 
 BLUE = "#08d9d6"
 FONT_NAME = "Segoe UI"
 GRAY = "#eaeaea"
 
 def hitung():
-    t3 = float(t3_input.get())
-    t2 = float(t2_input.get())
-    t = float(t_input.get())
-    d = float(d_input.get())
-    
-    t0 = float(t0_input.get())
-    h = float(h_input.get())
+    try:
+        t3 = float(t3_input.get())
+        t2 = float(t2_input.get())
+        t = float(t_input.get())
+        d = float(d_input.get())
+
+        t0 = float(t0_input.get())
+        h = float(h_input.get())
+    except:
+        messagebox.showwarning(title="Terdapat kolom yang masih kosong!", message="Mohon isi kolom yang kosong!")
 
     x = t0 + h
     f1 = float((t3 * x ** 3) + (t2 * x ** 2) + (t * x) + d)
