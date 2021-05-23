@@ -25,11 +25,11 @@ def hitung():
     f0 = float((t3 * t0 ** 3) + (t2 * t0 ** 2) + (t * t0) + d)
 
     kecepatan_rata = (f1-f0)/h
-    hasil_label.config(text=f"{kecepatan_rata}")
+    hasil_label.config(text=f"{kecepatan_rata} m/s²")
 
 window = Tk()
 window.title("KALKULATOR KECEPATAN RATA-RATA")
-window.maxsize(430, 450)
+window.maxsize(450, 450)
 window.iconbitmap("myIcon.ico")
 window.config(padx=30, pady=30, bg=BLUE)
 
