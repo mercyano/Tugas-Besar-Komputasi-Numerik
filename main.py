@@ -77,7 +77,7 @@ h_input.grid(row=8, column=1)
 kecepatan_label = Label(text="Kecepatan Rata-Rata = ", font=(FONT_NAME, 13, "bold"), bg=BLUE)
 kecepatan_label.grid(row=9, column=0)
 kecepatan_label.config(bg=BLUE)
-hasil_label = Label(text="0", font=("bold"), bg=BLUE)
+hasil_label = Label(text="m/s²", font=("bold"), bg=BLUE)
 hasil_label.grid(row=9, column=1)
 
 # Button
