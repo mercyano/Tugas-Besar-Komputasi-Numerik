@@ -30,11 +30,11 @@ def hitung():
 window = Tk()
 window.title("KALKULATOR KECEPATAN RATA-RATA")
 window.maxsize(450, 450)
-window.iconbitmap("myIcon.ico")
+window.iconbitmap("img/myIcon.ico")
 window.config(padx=30, pady=30, bg=BLUE)
 
 canvas = Canvas(width=200, height=142, bg=BLUE, highlightthickness=0)
-calculator_img = PhotoImage(file="calculator.png")
+calculator_img = PhotoImage(file="img/calculator.png")
 canvas.create_image(100, 71, image=calculator_img)
 canvas.grid(row=0, column=0, columnspan=2)
 
